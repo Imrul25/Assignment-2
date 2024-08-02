@@ -6,24 +6,29 @@
     font-variation-settings: 
     "slnt"0;
 }
+
 /* shared style */
 .display-flex{
     display: flex;
 }
+
 .description{
     font-weight: 200;
     color: rgba(255,255,255,0.5);
     margin:10px 0px 50px 0px;
 }
+
 body{
     background-color: black;
     color: white;
     justify-content: center;
     align-items: center;
 }
+
 .content{
     margin: 20px 200px;
 }
+
 .btn-primary{
     background-color: rgba(230, 83, 60, 1);
     color: white;
@@ -32,29 +37,40 @@ body{
     border: none;
     border-radius: 40px;
 }
+
 .btn-secondary{
     width: 200px;
     height: 50px;
     border-radius: 40px;
 }
+
+.habits,Run,BMI,Team,footer{
+    margin-top: 100px;
+}
+
 /* header styles */
+
 /* nav styles */
 .navbar{
     justify-content: space-between;
     align-items: center;
 }
+
 nav>h3{
     font-size: 36px;
     color: #E6533C;
 }
+
 .nav-link{
     padding: 0px;
 }
+
 a{
     font-weight: 400;
     text-decoration: none;
     color: white;
 }
+
 .nav-item{
     justify-content: center;
     align-items: center;
@@ -64,16 +80,197 @@ a{
     height: 30px;
     width: 80px;
 }
+.nav-links>i{
+    font-size: 2rem;
+    display: none;
+}
 .one{
     background-color: rgba(230, 83, 60, 1);
     border-radius: 20px;
 }
+
 /* banner style */
+.banner{
+    margin-bottom: 100px;
+}
+
 .banner-content{
     gap: 120px;
     justify-content: space-between;
 }
+
 .banner-title{
     font-size: 78px;
     font-weight: bolder;
+}
+
+.miama-font{
+    font-family:'Miama', sans-serif;
+    line-height: 0%;
+    font-weight: 80;
+    font-size: 150px;
+}
+.banner-image{
+    position: relative;
+}
+.upper-card,.lower-card{
+    border: 2px solid rgba(255, 255, 255, 0.092);
+    width: 200px;
+    border-radius: 12px;
+    padding-left: 20px;
+    align-items: center;
+    background-color: rgba(98, 97, 97, 0.559);
+    backdrop-filter: blur(10px);
+    p{
+        color: rgba(255, 255, 255, 0.624);
+        font-weight: 300;
+}
+position: absolute;
+}
+
+.upper-card{
+    h1{
+        font-size: 50px;
+        font-weight: bolder;
+    }
+    line-height: 10px;
+    right: 100px;
+    top: 100px;
+}
+.lower-card{
+    h1{
+        font-weight: bolder;
+    }
+    line-height: 20px;
+    gap: 20px;
+    left: -130px;
+    bottom: 80px;
+}
+.orange{
+    height: 50px;
+    width: 50px;
+    background-color: rgba(230, 83, 60, 1);
+    border-radius: 50%;
+}
+/* main style */
+
+.section-title{
+    font-size: 50px;
+    font-weight: 900;
+}
+
+/* section habits style */
+.habits{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.pictures{
+    justify-content: center;
+    align-items: center;
+}
+
+.pic-items{
+    justify-content: center;
+    text-align: center;
+}
+
+.pic-items{
+    border-radius: 200px;
+}
+
+/* section run styles */
+.Run {
+    align-items: center;
+    background-color: rgba(42, 42, 42);
+    border-radius: 20px;
+}
+
+.Run-content {
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px;
+}
+
+.pic-run{
+    margin: 0px 0px 0px 150px;
+}
+
+.crop{
+    border-radius: 20px;
+    object-fit: none;
+    object-position: 68% 33%;
+}
+
+/* section BMI styles */
+.BMI{
+    justify-content: center;
+    text-align: center;
+} 
+
+.calculator{
+    background-color: rgba(31, 31, 31);
+    justify-content: center;
+}
+
+.calculator-content{
+    justify-content: space-between;
+}
+
+th{
+    height: 50px;
+    width: 150px;
+    border: 2px solid rgba(255, 255, 255, 0.361);
+}
+
+td {
+    font-weight: 200;
+    height: 50px;
+    width: 150px;
+    border: 2px solid rgba(255, 255, 255, 0.361)
+    color rgba(255, 255, 255, 0.728);
+}
+
+table {
+    border-collapse: collapse;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+input,select{
+    color: white;
+    font-size: 15px;
+    border: 0px;
+    border-radius: 10px;
+    background-color: rgb(66, 66, 66);
+    height: 50px;
+    padding-left: 20px;
+
+}
+
+.ft{
+    width: 203%;
+}
+
+select {
+    color: rgb(120, 120, 120);
+}
+
+.BMI-Form>h1 {
+    text-align: left;
+}
+
+.BMI-Form>.description{
+    text-align: left;
+    width: 620px;
+}
+
+.BMI-Form>:no-button{
+    margin: 20px 0px;
+    text-align: center;
 }
