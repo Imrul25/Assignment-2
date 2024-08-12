@@ -270,7 +270,47 @@ select {
     width: 620px;
 }
 
-.BMI-Form>:no-button{
+.BMI-Form>button{
     margin: 20px 0px;
     text-align: center;
 }
+
+/* section Team styles */
+
+.Team{
+    text-align: center;
+}
+
+.trainers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    background-color: rgb(33, 33, 33);
+    border: 0px;
+    border-radius: 20px;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.card{
+    position: relative;
+}
+
+.card>img {
+    height: 280px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.name-text {
+    position: absolute;
+    text-align: left;
+    line-height: 10px;
+    left: 10px;
+    bottom: 10px;
+}
+
+.name-text>p {
+    font-weight: 300;
+}
+
