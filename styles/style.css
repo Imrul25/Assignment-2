@@ -133,7 +133,7 @@ span {
     backdrop-filter: blur(10px);
     p{
         color: rgba(255, 255, 255, 0.624);
-        font-weight: 300;
+        font-weight: 290;
 }
 position: absolute;
 }
@@ -153,8 +153,8 @@ position: absolute;
     }
     line-height: 20px;
     gap: 20px;
-    left: -130px;
-    bottom: 80px;
+    left: -129px;
+    bottom: 75px;
 }
 .orange{
     height: 50px;
@@ -229,14 +229,14 @@ position: absolute;
 }
 
 th{
-    height: 50px;
+    height: 40px;
     width: 150px;
     border: 1px solid #dadada;
 }
 
 td {
     border: 1px solid #dadada;
-    font-weight: 200;
+    font-weight: 190;
     height: 50px;
     width: 150px;
     border: 2px solid rgba(255, 255, 255, 0.361)
