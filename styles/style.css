@@ -104,8 +104,8 @@ a{
     font-weight: bolder;
 }
 
-.miama-font{
-    font-family:'Miama', sans-serif;
+.miama-font {
+    font-family: 'Miama',sans-serif;
     line-height: 0%;
     font-weight: 80;
     font-size: 150px;
@@ -134,7 +134,7 @@ position: absolute;
         font-weight: bolder;
     }
     line-height: 10px;
-    right: 100px;
+    right: -100px;
     top: 100px;
 }
 .lower-card{
@@ -176,7 +176,7 @@ position: absolute;
     text-align: center;
 }
 
-.pic-items{
+.pic-item{
     border-radius: 200px;
 }
 
@@ -253,7 +253,7 @@ input,select{
 
 }
 
-.ft{
+.f{
     width: 203%;
 }
 
@@ -261,16 +261,16 @@ select {
     color: rgb(120, 120, 120);
 }
 
-.BMI-Form>h1 {
+.BMI-form>h1 {
     text-align: left;
 }
 
-.BMI-Form>.description{
+.BMI-form>.description{
     text-align: left;
     width: 620px;
 }
 
-.BMI-Form>button{
+.BMI-form>button{
     margin: 20px 0px;
     text-align: center;
 }
@@ -314,3 +314,162 @@ select {
     font-weight: 300;
 }
 
+/* section Facts styles */
+.Facts{
+    background-color: rgb(33, 33, 33);
+    border-radius: 20px;
+    margin-top: 100px;
+    text-align: center;
+    padding: 20px;
+    h1{
+      font-size: 40px;
+      padding: 0px 80px 20px 80px;
+      b{
+        color: #E6533C;
+        font-size: 60px;
+      }
+    }
+    h2{
+      font-size: 40px;
+      font-weight: 500;
+      margin-left: 10px;
+    }
+  }
+  .facts-content{
+    justify-content: space-between;
+    text-align: left;
+    line-height: 5px;
+    div>div>p{
+      font-size: 20px;
+      font-weight: 200;
+      margin-left: 10px;
+    }
+  }
+  .facts-content>div{
+    padding: 20px;
+    align-items: center;
+    background-color: rgb(66, 66, 66);
+    border-radius: 20px;
+  }
+  .facts-content>div:hover{
+    transform:scale(1.2);
+    border-radius: 20px;
+    background-color: #ff994b;
+  }
+/* footer styles */
+footer {
+    background-color: rgba(31, 31, 31);
+    padding: 30px 0px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.306);
+}
+
+.fitness {
+    width: 40%;
+}
+
+.footer-column>h1>i {
+    color: #E6533C;
+    font-size: 60px;
+}
+
+.footer-column>p {
+    font-size: larger;
+    font-weight: 200;
+}
+
+.right {
+    color: rgba(255, 255, 255, 0.554);
+    font-weight: 200;
+    text-align: center;
+}
+
+/* responsive for small devices */
+@media screen and (max-width:576px)
+{
+    .content {
+        margin: 10px;
+    }
+
+    .pictures,.Run-content,.calculator-content,.banner-content {
+        display: block;
+    }
+
+    .nav-item {
+        display: none;
+    }
+    .nav-links>i{
+        display: block;
+    }
+    .banner-image{
+        margin-top: 50px;
+    }
+    .first-img {
+        width: 100%;
+    }
+
+    .upper-card{
+        height: 100px;
+        width: 180px;
+        right: 15px;
+        top: 70px;
+    }
+    .lower-card{
+        height: 100px;
+        width: 180px;
+        line-height: 10px;
+        left: 0px;
+        bottom: 330px;
+        gap: 10px;
+    }
+    .pic-run{
+        margin: 0px;
+        justify-content: center;
+    }
+
+    .pic-run>img {
+        margin-top: 30px;
+        height: 300px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    th,td {
+        width: 300px;
+    }
+
+    .BMI-form>.description{
+        width: 100%;
+    }
+
+    .BMI-form{
+        border: 2px solid red;
+    }
+
+    .trainers{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .Facts{
+        text-align: left;
+        h1{padding: 0px;}
+      }
+    
+      .facts-content{
+        display: block;
+        div{margin-top:10px}
+      } 
+
+    .footer-content {
+        display: block;
+        padding-left: 20px;
+    }
+
+    .fitness{
+        width: 100%;
+    }
+}
